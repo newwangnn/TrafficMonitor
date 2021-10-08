@@ -15,11 +15,13 @@ case class AvgSpeedInfo(start:Long,end:Long,monitorId:String,avgSpeed:Double,car
 //套牌车辆告警信息对象
 case class RepetitionCarWarning(car:String,firstMonitor:String,secondMonitor:String,msg:String,actionTime:Long)
 //危险驾驶的信息
-case class DangerousDrivingWarning(car:String,msg:String,createTime:Long,avgSpeed:Double)
+case class DangerousDrivingWarning(car:String,msg:String,createTime:Long,realSpeed:Double,limitSpeed:Double)
 //违法车辆信息对象
 case class ViolationInfo(car:String,msg:String,createTime:Long)
 //车辆轨迹数据样例类
 case class TrackInfo(car:String,actionTime:Long,monitorId:String,roadId:String,speed:Double)
+//出警记录对象
+case class PoliceAction(policeId:String,car:String,actionStatus:String,actionTime:Long)
 
 
 object GlobalConstants {
