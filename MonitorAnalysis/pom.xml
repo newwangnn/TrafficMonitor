@@ -57,6 +57,11 @@
             <artifactId>hbase-client</artifactId>
             <version>2.1.6</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-client</artifactId>
+            <version>0.98.24-hadoop2</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.commons</groupId>
